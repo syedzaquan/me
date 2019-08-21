@@ -20,10 +20,10 @@
          url('./fonts/Poppins-ThinItalic.ttf') format('truetype');
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Bebas';
     src: url('./fonts/BEBAS.ttf') format('truetype');
-}
+} */
 
 .body-area {
     max-width: 1232px;
