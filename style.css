@@ -20,7 +20,7 @@
         url('./fonts/Poppins-ThinItalic.ttf') format('truetype');
 } */
 
-@font-face {
+/* @font-face {
     font-family: 'Poppins',
     url('./fonts/Poppins-Black.ttf') format('truetype');
     font-weight: 900;
@@ -106,20 +106,6 @@
 
 @font-face {
     font-family: 'Poppins',
-    url('./fonts/Poppins.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-
-/* @font-face {
-    font-family: 'Poppins',
     url('./fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -130,7 +116,7 @@
     url('./fonts/Poppins-RegularItalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
-} */
+}
 
 @font-face {
     font-family: 'Poppins',
@@ -158,7 +144,7 @@
     url('./fonts/Poppins-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
-}
+} */
 
 @font-face {
     font-family: 'Bebas';
