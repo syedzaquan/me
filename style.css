@@ -106,6 +106,20 @@
 
 @font-face {
     font-family: 'Poppins',
+    url('./fonts/Poppins.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins',
+    url('./fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* @font-face {
+    font-family: 'Poppins',
     url('./fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -116,7 +130,7 @@
     url('./fonts/Poppins-RegularItalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
-}
+} */
 
 @font-face {
     font-family: 'Poppins',
