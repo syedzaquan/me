@@ -6,128 +6,128 @@
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins1',
     url('./fonts/Poppins-BlackItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins2',
     url('./fonts/Poppins-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins3',
     url('./fonts/Poppins-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins4',
     url('./fonts/Poppins-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins5',
     url('./fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins6',
     url('./fonts/Poppins-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins7',
     url('./fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins8',
     url('./fonts/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins9',
     url('./fonts/Poppins-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins10',
     url('./fonts/Poppins-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins11',
     url('./fonts/Poppins-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins12',
     url('./fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins13',
     url('./fonts/Poppins-RegularItalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins14',
     url('./fonts/Poppins-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins15',
     url('./fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins16',
     url('./fonts/Poppins-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins',
+    font-family: 'Poppins17',
     url('./fonts/Poppins-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'Bebas';
     src: url('./fonts/BEBAS.ttf') format('truetype');
-} */
+}
 
 .body-area {
     max-width: 1232px;
