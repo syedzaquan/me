@@ -1,0 +1,288 @@
+.body-area {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.hello {
+    font-size: 40px;
+    font-weight: 500;
+    color: #9eaab6;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    letter-spacing: 0px;
+    font-family: 'Bebas';
+}
+
+.location {
+    font-size: 25px;
+    font-weight: 500;
+    color: #9eaab6;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    letter-spacing: 0px;
+    font-family: 'Bebas';
+}
+
+.skillhead {
+    font-size: 40px;
+    font-weight: 500;
+    color: #9eaab6;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    letter-spacing: 0px;
+    font-family: 'Bebas';
+}
+
+.innercard {
+    background-color: #fff;
+    padding: 1.5rem 1.5rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.maincard {
+    margin: auto;
+    max-width: 780px;
+    padding-top: 10px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+    -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+}
+
+.skillcard {
+    max-width: 100%;
+    padding-top: 10px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+    -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+}
+
+.red {
+    background: #DB4437;
+}
+
+.blue {
+    background: #4285F4;
+}
+
+.yellow {
+    background: #F4B400;
+}
+
+.green {
+    background: #0F9D58;
+}
+
+.black {
+    background: #000000;
+}
+
+.grey {
+    background: #6c80a4;
+}
+
+.text-green {
+    color: #0F9D58;
+}
+
+.text-red {
+    color: #DB4437;
+}
+
+.text-yellow {
+    color: #F4B400;
+}
+
+.text-blue {
+    color: #4285F4;
+}
+
+.center {
+    text-align: center !important
+}
+
+.title {
+    margin-bottom: 13px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .2px;
+}
+
+.maintitle {
+    color: #0F9D58;
+
+}
+
+.skilltitle {
+    color: #6c80a4;
+
+}
+
+.uititle {
+    color: #6c80a4;
+}
+
+.webtitle {
+    color: #6c80a4;
+}
+
+.graphictitle {
+    color: #6c80a4;
+}
+
+.maintext {
+    color: #6c80a4;
+    letter-spacing: .2px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.abilitypadding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.skilltext {
+    color: #6c80a4;
+    letter-spacing: .2px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 165px;
+    border-radius: 20px;
+}
+
+.list {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(6, auto);
+    padding-inline-start: 40px;
+}
+
+.listitemgreen:before {
+    border-radius: 5px;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    margin-right: .375rem;
+    width: 10px;
+    background-color: #0F9D58;
+}
+
+.listitemgreen {
+    color: #6c80a4
+}
+
+.listitemblue:before {
+    border-radius: 5px;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    margin-right: .375rem;
+    width: 10px;
+    background-color: #4285F4;
+}
+
+.listitemblue {
+    color: #6c80a4
+}
+
+.ability {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 580px) {
+    .hello {
+        font-size: 40px;
+        font-weight: 500;
+        color: #9eaab6;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        margin-left: 25px;
+        margin-right: 25px;
+        letter-spacing: 0px;
+        font-family: 'Bebas';
+    }
+
+    .location {
+        font-size: 25px;
+        font-weight: 500;
+        color: #9eaab6;
+        margin-top: 10px;
+        margin-bottom: 70px;
+        margin-left: 25px;
+        margin-right: 25px;
+        letter-spacing: 0px;
+        font-family: 'Bebas';
+    }
+
+    .profile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 40%;
+        border-radius: 10px;
+    }
+
+    .skillhead {
+        font-size: 40px;
+        font-weight: 500;
+        color: #9eaab6;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+        letter-spacing: 0px;
+        font-family: 'Bebas';
+    }
+
+    .list {
+        display: grid;
+        grid-row-gap: .1875rem;
+        grid-template-columns: repeat(2, auto);
+        padding-inline-start: 20px;
+    }
+
+    .ability {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 165px;
+        border-radius: 20px;
+    }
+
+    .abilitypadding {
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+
+}
