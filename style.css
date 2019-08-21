@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Black.ttf') format('truetype'),
+         url('./fonts/Poppins-BlackItalic.ttf') format('truetype'),
+         url('./fonts/Poppins-Bold.ttf') format('truetype'),
+         url('./fonts/Poppins-BoldItalic.ttf') format('truetype'),
+         url('./fonts/Poppins-ExtraBold.ttf') format('truetype'),
+         url('./fonts/Poppins-ExtraBoldItalic.ttf') format('truetype'),
+         url('./fonts/Poppins-ExtraLight.ttf') format('truetype'),
+         url('./fonts/Poppins-ExtraLightItalic.ttf') format('truetype'),
+         url('./fonts/Poppins-Light.ttf') format('truetype'),
+         url('./fonts/Poppins-LightItalic.ttf') format('truetype'),
+         url('./fonts/Poppins-Medium.ttf') format('truetype'),
+         url('./fonts/Poppins-MediumItalic.ttf') format('truetype'),
+         url('./fonts/Poppins-Regular.ttf') format('truetype'),
+         url('./fonts/Poppins-RegularItalic.ttf') format('truetype'),
+         url('./fonts/Poppins-SemiBold.ttf') format('truetype'),
+         url('./fonts/Poppins-SemiBoldItalic.ttf') format('truetype'),
+         url('./fonts/Poppins-Thin.ttf') format('truetype'),
+         url('./fonts/Poppins-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('./fonts/BEBAS.ttf') format('truetype');
+}
+
 .body-area {
     max-width: 1232px;
     margin: 0 auto;
@@ -13,7 +40,7 @@
     margin-left: 70px;
     margin-right: 70px;
     letter-spacing: 0px;
-    font-family: 'bebas-neue', sans-serif;
+    font-family: 'Bebas';
 }
 
 .location {
@@ -25,7 +52,7 @@
     margin-left: 70px;
     margin-right: 70px;
     letter-spacing: 0px;
-    font-family: 'bebas-neue', sans-serif;
+    font-family: 'Bebas';
 }
 
 .skillhead {
@@ -37,7 +64,7 @@
     margin-left: 0px;
     margin-right: 0px;
     letter-spacing: 0px;
-    font-family: 'bebas-neue', sans-serif;
+    font-family: 'Bebas';
 }
 
 .innercard {
@@ -226,7 +253,7 @@
         margin-left: 25px;
         margin-right: 25px;
         letter-spacing: 0px;
-        font-family: 'bebas-neue', sans-serif;
+        font-family: 'Bebas';
     }
 
     .location {
@@ -238,7 +265,7 @@
         margin-left: 25px;
         margin-right: 25px;
         letter-spacing: 0px;
-        font-family: 'bebas-neue', sans-serif;
+        font-family: 'Bebas';
     }
 
     .profile {
@@ -260,7 +287,7 @@
         margin-left: 0px;
         margin-right: 0px;
         letter-spacing: 0px;
-        font-family: 'bebas-neue', sans-serif;
+        font-family: 'Bebas';
     }
 
     .list {
