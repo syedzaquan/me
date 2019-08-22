@@ -147,9 +147,16 @@
 } */
 
 @font-face {
+    font-family: 'Poppins',
+    url('./fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* @font-face {
     font-family: 'Bebas';
     src: url('./fonts/BEBAS.ttf') format('truetype');
-}
+} */
 
 .body-area {
     max-width: 1232px;
