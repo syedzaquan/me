@@ -243,6 +243,10 @@
     background: #6c80a4;
 }
 
+.gold {
+    background: #ccb65e;
+}
+
 .text-green {
     color: #0F9D58;
 }
@@ -259,6 +263,14 @@
     color: #4285F4;
 }
 
+.text-gold {
+    color: #ccb65e;
+}
+
+.text-grey {
+  color: #5b5b5b;
+}
+
 .center {
     text-align: center !important
 }
@@ -268,7 +280,7 @@
     font-size: 18px;
     font-weight: 600;
     letter-spacing: .2px;
-    
+
 }
 
 .maintitle {
@@ -369,6 +381,9 @@
     border-radius: 20px;
 }
 
+.card-flip {
+    transform: rotateY(180deg);
+}
 
 @media screen and (max-width: 580px) {
     .hello {
