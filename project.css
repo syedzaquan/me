@@ -186,13 +186,13 @@ small {
     color: black;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 560px) {
     .cardcenter {
         text-align: center;
     }
 
     .projectcard {
-        width: 300px;
+        width: 100%;
         display: inline-block;
         margin-top: 1rem;
         margin-left: 0rem;
