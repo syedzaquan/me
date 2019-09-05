@@ -178,20 +178,21 @@
 }
 
 .lightlabel {
-  color: var(--lightlabel-color);
+    color: var(--lightlabel-color);
 }
 
 .darklabel {
-  color:  var(--darklabel-color);
+    color: var(--darklabel-color);
 }
 
 [data-emoji] {
-  font-style: normal;
-  font-weight: normal;
+    font-style: normal;
+    font-weight: normal;
 }
+
 [data-emoji]:before {
-  content: attr(data-emoji);
-  margin-right: .125em;
+    content: attr(data-emoji);
+    margin-right: .125em;
 }
 
 .body-area {
@@ -263,31 +264,31 @@
 }
 
 .red {
-    background: linear-gradient(0deg, rgba(32,34,41,1) 90%, rgba(219,68,55,1) 10%);
+    background: linear-gradient(0deg, rgba(32, 34, 41, 1) 90%, rgba(219, 68, 55, 1) 10%);
 }
 
 .blue {
-    background: linear-gradient(0deg, rgba(32,34,41,1) 90%, rgba(66,133,244,1) 10%);
+    background: linear-gradient(0deg, rgba(32, 34, 41, 1) 90%, rgba(66, 133, 244, 1) 10%);
 }
 
 .yellow {
-    background: linear-gradient(0deg, rgba(32,34,41,1) 90%, rgba(244,180,0,1) 10%);
+    background: linear-gradient(0deg, rgba(32, 34, 41, 1) 90%, rgba(244, 180, 0, 1) 10%);
 }
 
 .green {
-    background: linear-gradient(0deg, rgba(32,34,41,1) 90%, rgba(15,157,88,1) 10%);
+    background: linear-gradient(0deg, rgba(32, 34, 41, 1) 90%, rgba(15, 157, 88, 1) 10%);
 }
 
 .black {
-    background: linear-gradient(0deg, rgba(32,34,41,1) 90%, rgba(0,0,0,1) 10%);
+    background: linear-gradient(0deg, rgba(32, 34, 41, 1) 90%, rgba(0, 0, 0, 1) 10%);
 }
 
 .grey {
-    background: linear-gradient(0deg, rgba(32,34,41,1) 90%, rgba(108,128,164,1) 10%);
+    background: linear-gradient(0deg, rgba(32, 34, 41, 1) 90%, rgba(108, 128, 164, 1) 10%);
 }
 
 .gold {
-    background: linear-gradient(0deg, rgba(40,43,51,1) 90%, rgba(204,182,94,1) 10%);
+    background: linear-gradient(0deg, rgba(40, 43, 51, 1) 90%, rgba(204, 182, 94, 1) 10%);
 }
 
 .text-green {
@@ -332,28 +333,28 @@
 }
 
 .skilltitle {
-    color:  var(--font-color);
+    color: var(--font-color);
 
 }
 
 .uititle {
-    color:  var(--font-color);
+    color: var(--font-color);
 }
 
 .webtitle {
-    color:  var(--font-color);
+    color: var(--font-color);
 }
 
 .graphictitle {
-    color:  var(--font-color);
+    color: var(--font-color);
 }
 
 .maintext {
-    color:  var(--font-color);
+    color: var(--font-color);
     letter-spacing: .2px;
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 0px;
+    margin-bottom: 13px;
 }
 
 .abilitypadding {
@@ -362,7 +363,7 @@
 }
 
 .skilltext {
-    color:  var(--font-color);
+    color: var(--font-color);
     letter-spacing: .2px;
     font-size: 15px;
     font-weight: 400;
@@ -397,7 +398,7 @@
 }
 
 .listitemgreen {
-    color:  var(--font-color);
+    color: var(--font-color);
 }
 
 .listitemblue:before {
@@ -411,7 +412,7 @@
 }
 
 .listitemblue {
-    color:  var(--font-color);
+    color: var(--font-color);
 }
 
 .ability {
@@ -430,65 +431,89 @@
 
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
 }
+
 .theme-switch-wrapper em {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 0.9rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.9rem;
 }
 
 .theme-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-  margin-bottom: 0px;
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    margin-bottom: 0px;
 }
 
 .theme-switch input {
-  display: none;
+    display: none;
 }
 
 .slidertoggle {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
 }
 
 .slidertoggle:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
 }
 
-input:checked + .slidertoggle {
-  background-color: #66bb6a;
+input:checked+.slidertoggle {
+    background-color: #66bb6a;
 }
 
-input:checked + .slidertoggle:before {
-  transform: translateX(26px);
+input:checked+.slidertoggle:before {
+    transform: translateX(26px);
 }
 
 .slidertoggle.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slidertoggle.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
+}
+
+.resume {
+    user-select: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 6px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    background-color: #2196f3;
+    border-color: #2196f3;
+    font-weight: 500;
+}
+
+.resume:hover {
+    color: #fff;
+    background-color: #1c84d6;
+    border-color: #1a7ecd;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 580px) {
@@ -559,68 +584,69 @@ input:checked + .slidertoggle:before {
         padding-top: 0px;
         padding-bottom: 15px;
     }
-    
+
     /*Simple css to style it like a toggle switch*/
     .theme-switch-wrapper {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-      justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: center;
     }
+
     .theme-switch-wrapper em {
-      margin-left: 10px;
-      margin-right: 10px;
-      font-size: 0.9rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 0.9rem;
     }
-    
+
     .theme-switch {
-      display: inline-block;
-      height: 34px;
-      position: relative;
-      width: 60px;
-      margin-bottom: 0px;
+        display: inline-block;
+        height: 34px;
+        position: relative;
+        width: 60px;
+        margin-bottom: 0px;
     }
-    
+
     .theme-switch input {
-      display: none;
+        display: none;
     }
-    
+
     .slidertoggle {
-      background-color: #ccc;
-      bottom: 0;
-      cursor: pointer;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: .4s;
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: .4s;
     }
-    
+
     .slidertoggle:before {
-      background-color: #fff;
-      bottom: 4px;
-      content: "";
-      height: 26px;
-      left: 4px;
-      position: absolute;
-      transition: .4s;
-      width: 26px;
+        background-color: #fff;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: .4s;
+        width: 26px;
     }
-    
-    input:checked + .slidertoggle {
-      background-color: #66bb6a;
+
+    input:checked+.slidertoggle {
+        background-color: #66bb6a;
     }
-    
-    input:checked + .slidertoggle:before {
-      transform: translateX(26px);
+
+    input:checked+.slidertoggle:before {
+        transform: translateX(26px);
     }
-    
+
     .slidertoggle.round {
-      border-radius: 34px;
+        border-radius: 34px;
     }
-    
+
     .slidertoggle.round:before {
-      border-radius: 50%;
+        border-radius: 50%;
     }
 
 
