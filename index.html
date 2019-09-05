@@ -351,19 +351,30 @@
 
 
     </div>
-    <script>
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    <script id="rendered-js">
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
 
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
-    else {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }    
-}
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
 
-toggleSwitch.addEventListener('change', switchTheme, false);
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+        //# sourceURL=pen.js
     </script>
 </body>
 
