@@ -156,7 +156,7 @@ small {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 2em;
-    background: #ffffff;
+    background: var(--projectcard-color);
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     -webkit-box-shadow: var(--box-shadow);
