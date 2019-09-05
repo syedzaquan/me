@@ -537,5 +537,68 @@ input:checked + .slidertoggle:before {
         padding-top: 0px;
         padding-bottom: 15px;
     }
+    
+    /*Simple css to style it like a toggle switch*/
+    .theme-switch-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      justify-content: center;
+    }
+    .theme-switch-wrapper em {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+    
+    .theme-switch {
+      display: inline-block;
+      height: 34px;
+      position: relative;
+      width: 60px;
+      margin-bottom: 0px;
+    }
+    
+    .theme-switch input {
+      display: none;
+    }
+    
+    .slidertoggle {
+      background-color: #ccc;
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: .4s;
+    }
+    
+    .slidertoggle:before {
+      background-color: #fff;
+      bottom: 4px;
+      content: "";
+      height: 26px;
+      left: 4px;
+      position: absolute;
+      transition: .4s;
+      width: 26px;
+    }
+    
+    input:checked + .slidertoggle {
+      background-color: #66bb6a;
+    }
+    
+    input:checked + .slidertoggle:before {
+      transform: translateX(26px);
+    }
+    
+    .slidertoggle.round {
+      border-radius: 34px;
+    }
+    
+    .slidertoggle.round:before {
+      border-radius: 50%;
+    }
+
 
 }
