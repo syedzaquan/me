@@ -151,6 +151,24 @@
     src: url('./fonts/BEBAS.ttf') format('truetype');
 }
 
+:root {
+    --card-color: #fff;
+    --secondary-color: #536390;
+    --font-color: #6c80a4;
+    --bg-color: #f1f3f5;
+    --heading-color: #292922;
+    --box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+}
+
+[data-theme="dark"] {
+    --card-color: #202229;
+    --secondary-color: #818cab;
+    --font-color: #eeeeff;
+    --bg-color: #17191f;
+    --heading-color: #818cab;
+    --box-shadow: 0 6px 8px rgba(#747474, 0.09), 0 1px 2px rgba(#747474, 0.09);
+}
+
 .body-area {
     max-width: 1232px;
     margin: 0 auto;
@@ -194,7 +212,7 @@
 }
 
 .innercard {
-    background-color: #fff;
+    background-color: var(--card-color);
     padding: 1.5rem 1.5rem;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -206,8 +224,8 @@
     padding-top: 10px;
     position: relative;
     border-radius: 5px;
-    box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
-    -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
 }
 
 .skillcard {
@@ -215,8 +233,8 @@
     padding-top: 10px;
     position: relative;
     border-radius: 5px;
-    box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
-    -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
 }
 
 .red {
@@ -289,24 +307,24 @@
 }
 
 .skilltitle {
-    color: #6c80a4;
+    color:  var(--font-color);
 
 }
 
 .uititle {
-    color: #6c80a4;
+    color:  var(--font-color);
 }
 
 .webtitle {
-    color: #6c80a4;
+    color:  var(--font-color);
 }
 
 .graphictitle {
-    color: #6c80a4;
+    color:  var(--font-color);
 }
 
 .maintext {
-    color: #6c80a4;
+    color:  var(--font-color);
     letter-spacing: .2px;
     font-size: 15px;
     font-weight: 400;
@@ -319,7 +337,7 @@
 }
 
 .skilltext {
-    color: #6c80a4;
+    color:  var(--font-color);
     letter-spacing: .2px;
     font-size: 15px;
     font-weight: 400;
@@ -354,7 +372,7 @@
 }
 
 .listitemgreen {
-    color: #6c80a4
+    color:  var(--font-color);
 }
 
 .listitemblue:before {
@@ -368,7 +386,7 @@
 }
 
 .listitemblue {
-    color: #6c80a4
+    color:  var(--font-color);
 }
 
 .ability {
@@ -383,6 +401,68 @@
 
 .card-flip {
     transform: rotateY(180deg);
+}
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  margin-bottom: 0px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slidertoggle {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slidertoggle:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slidertoggle {
+  background-color: #66bb6a;
+}
+
+input:checked + .slidertoggle:before {
+  transform: translateX(26px);
+}
+
+.slidertoggle.round {
+  border-radius: 34px;
+}
+
+.slidertoggle.round:before {
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 580px) {

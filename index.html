@@ -12,7 +12,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
-    
+
     <!-- <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
     </style> -->
@@ -33,6 +33,13 @@
         <div class="maincard green center">
             <div class="innercard">
                 <img class="profile" src="images/a.png">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slidertoggle round"></div>
+                    </label>
+                    <em>Enable Dark Mode!</em>
+                </div>
                 <h1 class="maintitle title">UI/UX, Graphic and Website Designer</h1>
                 <p class="maintext"> I have studied Software Engineering at University of Kuala Lumpur and now have a passion on building and designing a beautiful website with the latest trend of design </p>
             </div>
@@ -172,7 +179,7 @@
             <div class="innercard">
                 <!-- <h1 class="skilltitle title">Languages</h1> -->
                 <div class="cardcenter">
-                  
+
                     <div class="projectcard gold">
                         <div class="projectcard-img" style="background-image:url('images/tahfizposter.png');">
                             <div class="overlay">
@@ -213,7 +220,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="projectcard gold">
                         <div class="projectcard-img" style="background-image:url('images/gsc.png');">
                             <div class="overlay">
@@ -229,7 +236,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="projectcard gold">
                         <div class="projectcard-img" style="background-image:url('images/100plus.png');">
                             <div class="overlay">
@@ -245,7 +252,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="projectcard gold">
                         <div class="projectcard-img" style="background-image:url('images/matchbox.png');">
                             <div class="overlay">
@@ -261,7 +268,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="projectcard gold">
                         <div class="projectcard-img" style="background-image:url('https://cdn.dribbble.com/users/3248279/screenshots/6844649/1366_2.png');">
                             <div class="overlay">
@@ -300,7 +307,18 @@
 
     </div>
     <script>
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
     </script>
 </body>
 

@@ -130,12 +130,12 @@
     border-radius: 5px;
 
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
-    background-color: #ffffff;
+    background-color: var(--card-color);
 }
 
 .timelinedesc {
     margin-bottom: 0px;
-    color: #5b5b5b;
+    color: var(--font-color);
 }
 
 .page {
@@ -150,7 +150,7 @@
     width: 30px;
     box-shadow: inset 0px 0px 0px 5px #6c80a4;
     color: #0F9D58;
-    background-color: #ffffff;
+    background-color: var(--card-color);
     font-weight: 500;
     position: absolute;
     left: 0;
@@ -165,7 +165,7 @@
     width: 30px;
     box-shadow: inset 0px 0px 0px 5px #6c80a4;
     color: #0F9D58;
-    background-color: #ffffff;
+    background-color: var(--card-color);
     font-weight: 500;
     position: absolute;
     left: 0;
@@ -304,7 +304,7 @@ Patreon
       padding: .5rem 1.5rem;
       text-align: center;
       box-shadow: inset 0px 0px 0px 3px rgba(15, 157, 88, 1);
-      background-color: #ffffff;
+      background-color: var(--card-color);
       color: #0F9D58;
       border-radius: 5px;
       top: 50%;
@@ -333,12 +333,12 @@ Patreon
       border-radius: 5px;
   
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
-      background-color: #ffffff;
+      background-color: var(--card-color);
   }
   
   .timelinedesc {
       margin-bottom: 0px;
-      color: #5b5b5b;
+      color: var(--font-color);
   }
   
   .page {
@@ -353,7 +353,7 @@ Patreon
       width: 30px;
       box-shadow: inset 0px 0px 0px 5px #6c80a4;
       color: #0F9D58;
-      background-color: #ffffff;
+      background-color: var(--card-color);
       font-weight: 500;
       position: absolute;
       left: 0;
@@ -368,7 +368,7 @@ Patreon
       width: 30px;
       box-shadow: inset 0px 0px 0px 5px #6c80a4;
       color: #0F9D58;
-      background-color: #ffffff;
+      background-color: var(--card-color);
       font-weight: 500;
       position: absolute;
       left: 0;
