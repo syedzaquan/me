@@ -154,6 +154,8 @@
 :root {
     --card-color: #fff;
     --projectcard-color: #fbfbfb;
+    --darklabel-color: #fff;
+    --lightlabel-color: #6c80a4;
     --secondary-color: #536390;
     --font-color: #6c80a4;
     --cardfont-color: #5b5b5b;
@@ -165,12 +167,22 @@
 [data-theme="dark"] {
     --card-color: #202229;
     --projectcard-color: #282b33;
+    --darklabel-color: #fff;
+    --lightlabel-color: #202229;
     --secondary-color: #818cab;
     --font-color: #eeeeff;
     --cardfont-color: #b9bac3;
     --bg-color: #17191f;
     --heading-color: #818cab;
     --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.lightlabel {
+  color: var(--lightlabel-color);
+}
+
+.darklabel {
+  color:  var(--darklabel-color);
 }
 
 [data-emoji] {
@@ -425,7 +437,8 @@
 }
 .theme-switch-wrapper em {
   margin-left: 10px;
-  font-size: 1rem;
+  margin-right: 10px;
+  font-size: 0.9rem;
 }
 
 .theme-switch {
@@ -556,7 +569,8 @@ input:checked + .slidertoggle:before {
     }
     .theme-switch-wrapper em {
       margin-left: 10px;
-      font-size: 1rem;
+      margin-right: 10px;
+      font-size: 0.9rem;
     }
     
     .theme-switch {
