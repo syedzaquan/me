@@ -9,13 +9,16 @@
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     padding-top: 10px;
     transition: all .2s ease;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
-    -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
 
 }
 
@@ -89,10 +92,8 @@
 .projectcard-content {
     width: 100%;
     min-height: 104px;
-    background-color: #fbfbfb;
-    border-top: 1px solid #e0e5e9;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    background-color: var(--projectcard-color);
+    /* border-top: 1px solid #e0e5e9; */
     padding: 1rem 2rem;
     transition: all .2s ease;
 }
@@ -115,7 +116,7 @@
     /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #6c80a4;
+    color: var(--cardfont-color);
 }
 
 .modal-window div:not(:last-of-type) {
@@ -157,8 +158,8 @@ small {
     padding: 2em;
     background: #ffffff;
     border-radius: 5px;
-    box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
-    -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
 }
 
 .modal-window header {
@@ -198,13 +199,16 @@ small {
         margin-left: 0rem;
         margin-right: 0rem;
         margin-bottom: 0rem;
-        border-radius: 5px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
         padding-top: 10px;
         transition: all .2s ease;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
-        -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+        box-shadow: var(--box-shadow);
+        -webkit-box-shadow: var(--box-shadow);
 
     }
 
@@ -278,10 +282,8 @@ small {
     .projectcard-content {
         width: 100%;
         min-height: 104px;
-        background-color: #fff;
-        border-top: 1px solid #E9E9EB;
-        border-bottom-right-radius: 4px;
-        border-bottom-left-radius: 4px;
+        background-color: var(--projectcard-color);
+        /* border-top: 1px solid #E9E9EB; */
         padding: 1rem 2rem;
         transition: all .2s ease;
     }
@@ -304,7 +306,7 @@ small {
         /* white-space: nowrap; */
         overflow: hidden;
         text-overflow: ellipsis;
-        color: #6c80a4;
+        color: var(--cardfont-color);
     }
 
     .modal-window div:not(:last-of-type) {
@@ -346,8 +348,8 @@ small {
         padding: 2em;
         background: #ffffff;
         border-radius: 5px;
-        box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
-        -webkit-box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
+        box-shadow: var(--box-shadow);
+        -webkit-box-shadow: var(--box-shadow);
     }
 
     .modal-window header {
