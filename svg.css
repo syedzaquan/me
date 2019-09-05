@@ -4,7 +4,7 @@ svg:not(:root).svg-inline--fa {
 
 .svg-inline--fa {
     display: inline-block;
-    font-size: inherit;
+    font-size: 18px;
     height: 1em;
     overflow: visible;
     vertical-align: -.125em
