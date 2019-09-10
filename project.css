@@ -155,7 +155,10 @@ small {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    padding: 2em;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
     background: var(--projectcard-color);
     border-radius: 5px;
     box-shadow: var(--box-shadow);
@@ -342,14 +345,17 @@ small {
     }
 
     .modal-window>div {
-        width: 400px;
+        width: 90%;
         position: absolute;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        padding: 2em;
-        background: #ffffff;
+        padding-top: 3em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 3em;
+        background: var(--projectcard-color);
         border-radius: 5px;
         box-shadow: var(--box-shadow);
         -webkit-box-shadow: var(--box-shadow);
@@ -376,7 +382,7 @@ small {
         text-decoration: none;
         transition: 0.3s;
     }
-    
+
     .modal-close:hover {
         color: #aaa;
         text-decoration: none;

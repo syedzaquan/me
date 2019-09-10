@@ -156,11 +156,9 @@
     --projectcard-color: #fbfbfb;
     --darklabel-color: #fff;
     --lightlabel-color: #6c80a4;
-    --secondary-color: #536390;
     --font-color: #6c80a4;
     --cardfont-color: #5b5b5b;
     --bg-color: #f1f3f5;
-    --heading-color: #292922;
     --box-shadow: 0 6px 8px rgba(102, 119, 136, .03), 0 1px 2px rgba(102, 119, 136, .3);
 }
 
@@ -169,11 +167,9 @@
     --projectcard-color: #282b33;
     --darklabel-color: #fff;
     --lightlabel-color: #202229;
-    --secondary-color: #818cab;
     --font-color: #eeeeff;
     --cardfont-color: #b9bac3;
     --bg-color: #17191f;
-    --heading-color: #818cab;
     --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
 }
 
@@ -514,6 +510,18 @@ input:checked+.slidertoggle:before {
     background-color: #1c84d6;
     border-color: #1a7ecd;
     text-decoration: none;
+}
+
+.innershowcase {
+  width: 100%;
+
+}
+
+.showcase {
+  width: 80%;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
 }
 
 @media screen and (max-width: 580px) {
