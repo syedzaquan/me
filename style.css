@@ -417,7 +417,7 @@
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 10px;
-    width: 200px;
+    width: 60%;
     border-radius: 20px;
 }
 
@@ -524,7 +524,8 @@ input:checked+.slidertoggle:before {
     -webkit-box-shadow: var(--box-shadow);
 }
 
-@media screen and (max-width: 580px) {
+/* @media screen and (max-width: 580px) { */
+@media screen and (max-width: 768px) {
     .hello {
         font-size: 40px;
         font-weight: 500;
@@ -584,7 +585,7 @@ input:checked+.slidertoggle:before {
         margin-right: auto;
         margin-top: 0px;
         margin-bottom: 0px;
-        width: 165px;
+        width: 100%;
         border-radius: 20px;
     }
 
