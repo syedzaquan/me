@@ -124,7 +124,7 @@
 }
 
 small {
-    color: #aaa;
+    color: var(--smallcardfont-color);
 }
 
 .modal-window {
@@ -193,7 +193,7 @@ small {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
     .cardcenter {
         text-align: center;
     }
@@ -320,7 +320,7 @@ small {
     }
 
     small {
-        color: #aaa;
+        color: var(--smallcardfont-color);
     }
 
     .modal-window {

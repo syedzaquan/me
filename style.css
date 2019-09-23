@@ -158,6 +158,7 @@
   --lightlabel-color: #6c80a4;
   --font-color: #6c80a4;
   --cardfont-color: #5b5b5b;
+  --smallcardfont-color: #6c80a4;
   --bg-color: #f1f3f5;
   --box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03),
     0 1px 2px rgba(102, 119, 136, 0.3);
@@ -170,6 +171,7 @@
   --lightlabel-color: #202229;
   --font-color: #eeeeff;
   --cardfont-color: #b9bac3;
+  --smallcardfont-color: #b9bac3;
   --bg-color: #17191f;
   --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
 }
@@ -342,6 +344,10 @@
 
 .center {
   text-align: center !important;
+}
+
+.left {
+  text-align: left !important;
 }
 
 .title {

@@ -134,7 +134,13 @@
 }
 
 .timelinedesc {
+
+    color: var(--font-color);
+}
+
+.timelinedetails {
     margin-bottom: 0px;
+    font-size: 15px;
     color: var(--font-color);
 }
 
@@ -200,7 +206,7 @@ Patreon
     color: #ff4242;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
   .timeline {
       position: relative;
       padding-top: 4rem;
@@ -337,7 +343,13 @@ Patreon
   }
   
   .timelinedesc {
+
+      color: var(--font-color);
+  }
+  
+  .timelinedetails {
       margin-bottom: 0px;
+      font-size: 15px;
       color: var(--font-color);
   }
   
