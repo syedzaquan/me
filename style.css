@@ -1,179 +1,6 @@
-/* @font-face {
-    font-family: 'Poppins';
-    src: url('./fonts/Poppins-Black.ttf') format('truetype'),
-        url('./fonts/Poppins-BlackItalic.ttf') format('truetype'),
-        url('./fonts/Poppins-Bold.ttf') format('truetype'),
-        url('./fonts/Poppins-BoldItalic.ttf') format('truetype'),
-        url('./fonts/Poppins-ExtraBold.ttf') format('truetype'),
-        url('./fonts/Poppins-ExtraBoldItalic.ttf') format('truetype'),
-        url('./fonts/Poppins-ExtraLight.ttf') format('truetype'),
-        url('./fonts/Poppins-ExtraLightItalic.ttf') format('truetype'),
-        url('./fonts/Poppins-Light.ttf') format('truetype'),
-        url('./fonts/Poppins-LightItalic.ttf') format('truetype'),
-        url('./fonts/Poppins-Medium.ttf') format('truetype'),
-        url('./fonts/Poppins-MediumItalic.ttf') format('truetype'),
-        url('./fonts/Poppins-Regular.ttf') format('truetype'),
-        url('./fonts/Poppins-RegularItalic.ttf') format('truetype'),
-        url('./fonts/Poppins-SemiBold.ttf') format('truetype'),
-        url('./fonts/Poppins-SemiBoldItalic.ttf') format('truetype'),
-        url('./fonts/Poppins-Thin.ttf') format('truetype'),
-        url('./fonts/Poppins-ThinItalic.ttf') format('truetype');
-} */
-
-/* @font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-RegularItalic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins',
-    url('./fonts/Poppins-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-} */
-
 @font-face {
   font-family: "Bebas";
   src: url("./fonts/BEBAS.ttf") format("truetype");
-}
-
-:root {
-  --card-color: #fff;
-  --projectcard-color: #fbfbfb;
-  --darklabel-color: #fff;
-  --lightlabel-color: #6c80a4;
-  --font-color: #6c80a4;
-  --cardfont-color: #5b5b5b;
-  --smallcardfont-color: #6c80a4;
-  --bg-color: #f1f3f5;
-  --box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03),
-    0 1px 2px rgba(102, 119, 136, 0.3);
-}
-
-[data-theme="dark"] {
-  --card-color: #202229;
-  --projectcard-color: #282b33;
-  --darklabel-color: #fff;
-  --lightlabel-color: #202229;
-  --font-color: #eeeeff;
-  --cardfont-color: #b9bac3;
-  --smallcardfont-color: #b9bac3;
-  --bg-color: #17191f;
-  --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
 }
 
 .lightlabel {
@@ -408,11 +235,71 @@
   border-radius: 20px;
 }
 
+.links {
+    width: 80%;
+    text-align: center;
+    margin-right: 6%;
+}
+
 .list {
   display: grid;
   grid-row-gap: 10px;
   grid-template-columns: repeat(6, auto);
   padding-inline-start: 40px;
+}
+
+.social .email {
+  color: var(--email-color);
+  transition: 0.3s;
+}
+
+.social .email:hover {
+  color: var(--email-color-hover);
+}
+
+.social .phone {
+  color: var(--phone-color);
+  transition: 0.3s;
+}
+
+.social .phone:hover {
+  color: var(--phone-color-hover);
+}
+
+.social .twitter {
+  color: var(--twitter-color);
+  transition: 0.3s;
+}
+
+.social .twitter:hover {
+  color: var(--twitter-color-hover);
+}
+
+.social .instagram {
+  color: var(--instagram-color);
+  transition: 0.3s;
+}
+
+.social .instagram:hover {
+  color: var(--instagram-color-hover);
+}
+
+.social .dribbble {
+  color: var(--dribbble-color);
+  transition: 0.3s;
+}
+
+.social .dribbble:hover {
+  color: var(--dribbble-color-hover);
+}
+
+.social .linkedin {
+  color: var(--linkedin-color);
+  transition: 0.3s;
+}
+
+.social .linkedin:hover {
+  color: var(--linkedin-color-hover);
 }
 
 .listitemgreen:before {
@@ -536,6 +423,7 @@ input:checked + .slidertoggle:before {
   background-color: #2196f3;
   border-color: #2196f3;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .resume:hover {
@@ -614,6 +502,12 @@ input:checked + .slidertoggle:before {
     margin-bottom: 20px;
     width: 40%;
     border-radius: 10px;
+  }
+  
+  .links {
+      width: 80%;
+      text-align: center;
+      margin-right: 4%;
   }
 
   .skillhead {

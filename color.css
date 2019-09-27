@@ -1,0 +1,52 @@
+:root {
+    --card-color: #fff;
+    --projectcard-color: #fbfbfb;
+    --darklabel-color: #fff;
+    --lightlabel-color: #6c80a4;
+    --font-color: #6c80a4;
+    --cardfont-color: #5b5b5b;
+    --smallcardfont-color: #6c80a4;
+    --bg-color: #f1f3f5;
+    
+    --email-color: #e43d28;
+    --email-color-hover: #be311f;
+    --phone-color: #0dc175;
+    --phone-color-hover: #0b995d;
+    --twitter-color: #00acee;
+    --twitter-color-hover: #0086b9 ;
+    --instagram-color: #ed4956;
+    --instagram-color-hover: #d4414c;
+    --dribbble-color: #ea4c89;
+    --dribbble-color-hover: #c13f71;
+    --linkedin-color: #0077B5;
+    --linkedin-color-hover: #046598;
+    
+    --box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03),
+        0 1px 2px rgba(102, 119, 136, 0.3);
+}
+
+[data-theme="dark"] {
+    --card-color: #202229;
+    --projectcard-color: #282b33;
+    --darklabel-color: #fff;
+    --lightlabel-color: #202229;
+    --font-color: #eeeeff;
+    --cardfont-color: #b9bac3;
+    --smallcardfont-color: #b9bac3;
+    --bg-color: #17191f;
+
+    --email-color: #da4537;
+    --email-color-hover: #b0382d;
+    --phone-color: #0dc175;
+    --phone-color-hover: #0b995d;
+    --twitter-color: #00acee;
+    --twitter-color-hover: #0086b9 ;
+    --instagram-color: #ed4956;
+    --instagram-color-hover: #d4414c;
+    --dribbble-color: #ea4c89;
+    --dribbble-color-hover: #c13f71;
+    --linkedin-color: #0077B5;
+    --linkedin-color-hover: #046598;
+
+    --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+}
