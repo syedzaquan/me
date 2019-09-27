@@ -87,6 +87,7 @@
   border-radius: 5px;
   box-shadow: var(--box-shadow);
   -webkit-box-shadow: var(--box-shadow);
+  transition: 0.2s;
 }
 
 .red {
@@ -238,7 +239,8 @@
 .links {
     width: 80%;
     text-align: center;
-    margin-right: 6%;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 .list {
@@ -246,6 +248,20 @@
   grid-row-gap: 10px;
   grid-template-columns: repeat(6, auto);
   padding-inline-start: 40px;
+}
+
+.social-banner {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px 0px;
+  box-shadow: 0px 6px 17px -12px rgba(0,0,0,0.75);
+  /* border: 1px solid rgba(0, 0, 0, 0.13); */
+  transition: 0.2s;
+}
+
+.social-banner:hover {
+  transform: scale(1.05);
 }
 
 .social .email {
