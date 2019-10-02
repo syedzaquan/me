@@ -91,7 +91,7 @@
 
 .projectcard-content {
     width: 100%;
-    min-height: 104px;
+    /* min-height: 104px; */
     background-color: var(--projectcard-color);
     /* border-top: 1px solid #e0e5e9; */
     padding: 1rem 2rem;
@@ -139,6 +139,7 @@ small {
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s;
+    
 }
 
 .modal-window:target {
@@ -287,7 +288,7 @@ small {
 
     .projectcard-content {
         width: 100%;
-        min-height: 104px;
+        /* min-height: 104px; */
         background-color: var(--projectcard-color);
         /* border-top: 1px solid #E9E9EB; */
         padding: 1rem 2rem;
@@ -388,4 +389,33 @@ small {
         text-decoration: none;
         transition: 0.3s;
     }
+    
+    .modal-window p {
+      font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+  .modal-window p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 2500px) {
+  .modal-window>div {
+      width: 400px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      padding-top: 2em;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom: 2em;
+      background: var(--projectcard-color);
+      border-radius: 5px;
+      box-shadow: var(--box-shadow);
+      -webkit-box-shadow: var(--box-shadow);
+  }
 }
