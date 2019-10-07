@@ -90,6 +90,16 @@
     transition: 0.2s;
 }
 
+.endnote {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--font-color);
+}
+
+.love {
+    color: #ec3f3f;
+}
+
 .red {
     background: linear-gradient(0deg,
         rgba(32, 34, 41, 1) 90%,
