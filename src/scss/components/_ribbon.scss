@@ -1,0 +1,62 @@
+.ribbon {
+    padding: 1rem;
+    font-family: $syedsans;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $forest-green;
+    // position: fixed;
+    // top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+    margin: 0 auto;
+
+    .ribbon-logo {}
+
+    .ribbon-datetime,
+    .spotify-current {
+        font-size: 24px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+
+        .dots {
+            border-radius: 50px;
+            background-color: $red;
+            height: 8px;
+            width: 8px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    .spotify-current {
+        display: flex;
+        align-items: center;
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+
+            .marquee {
+                display: inline-block;
+                animation: scroll-left 10s linear infinite;
+            }
+        }
+    }
+
+    .ribbon-email {}
+
+
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

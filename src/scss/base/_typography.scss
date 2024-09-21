@@ -1,0 +1,27 @@
+
+@include font-face('Satoshi-Light', 'Satoshi', 300);
+@include font-face('Satoshi-Regular', 'Satoshi', 400);
+@include font-face('Satoshi-Medium', 'Satoshi', 500);
+@include font-face('Satoshi-Bold', 'Satoshi', 600);
+@include font-face('Satoshi-Black', 'Satoshi', 700);
+@include font-face('Gambarino-Regular', 'Gambarino', 800);
+@include font-face('FoundersGrotesk-Semibold', 'Grotesk', 600);
+@include font-face('NimbusSanL-Reg', 'Nimbus Sans L', 300);
+@include font-face('NimbusSanL-Bol', 'Nimbus Sans L', 600);
+@include font-face('SyedSans-Light', 'Syed Sans', 300);
+@include font-face('SyedSans-Regular', 'Syed Sans', 400);
+@include font-face('SyedSans-Medium', 'Syed Sans', 500);
+@include font-face('SyedSans-Bold', 'Syed Sans', 600);
+
+// @font-face{
+//     font-family: "Founders Grotesk X-Cond SmBd";
+//     src: url("../fonts/Grotesk/FoundersGrotesk-Semibold.eot");
+//     src: url("../fonts/Grotesk/FoundersGrotesk-Semibold.eot?#iefix")format("embedded-opentype"),
+//         url("../fonts/Grotesk/FoundersGrotesk-Semibold.woff")format("woff"),
+//         url("../fonts/Grotesk/FoundersGrotesk-Semibold.woff2")format("woff2"),
+//         url("../fonts/Grotesk/FoundersGrotesk-Semibold.ttf")format("truetype"),
+//         url("../fonts/Grotesk/FoundersGrotesk-Semibold.svg#Founders Grotesk X-Cond SmBd")format("svg");
+//     font-weight:normal;
+//     font-style:normal;
+//     font-display:swap;
+// }

@@ -27,6 +27,7 @@ storage/app/uploads/public/
 storage/system.json
 storage/temp/
 .vscode
+.bak
 package-lock.json
 
 # for netbeans
