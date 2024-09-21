@@ -49,8 +49,7 @@
             font-weight: 600;
             // overflow: hidden;
 
-            .my-name {
-            }
+            .my-name {}
 
             .code {
                 background-color: #282c34;
@@ -73,12 +72,13 @@
             }
 
             &.jacktus {
-                font-family: 'Lora', Arial, Helvetica, sans-serif;
-                font-weight: 700;
-                font-size: 24px;
-                text-transform: none;
-                letter-spacing: -0.5px;
+                font-family: 'Instrument Serif', Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: 300;
                 line-height: 60px;
+                font-style: italic;
+                text-transform: none;
+                color: #03ACF0;
             }
 
 
@@ -109,17 +109,19 @@
             color: $forest-green;
             overflow: hidden;
             font-kerning: none;
-            font-size: 20px;
-            line-height: 24px;
+            font-size: 36px;
+            line-height: 40px;
             font-weight: 400;
             max-width: 1100px;
             width: 100%;
-            position: absolute;
-            bottom: 50px;
-            right: 50px;
-            text-align: right;
+            margin-top: 50px;
+            // position: absolute;
+            // bottom: 50px;
+            // left: 50px;
+            // text-align: right;
 
-            span, b {
+            span,
+            b {
                 font-weight: 500;
 
                 .word {
@@ -127,7 +129,8 @@
                 }
             }
 
-            .line, .word {
+            .line,
+            .word {
                 overflow: hidden;
 
             }
@@ -309,7 +312,7 @@
 
 .introduction {
     // max-width: 1800px;
-    width: 1800px;
+    width: 95%;
     margin: 0 auto;
 
     background-color: $lemonade;
@@ -324,6 +327,8 @@
         .row {
             // display: flex;
             // align-items: center;
+
+            flex-direction: column;
         }
 
         .flex-col {
@@ -332,11 +337,20 @@
             }
 
             &:nth-child(2) {
-                width: 40%;
+                width: 100%;
                 display: flex;
                 // justify-content: end;
-                flex-direction: column;
-                align-items: end;
+                flex-direction: row;
+                align-items: start;
+                justify-content: space-between;
+                margin-top: 10rem;
+            }
+
+            h2 {
+                font-size: clamp(2.5rem, 7vw, 6.25rem);
+                font-weight: 600;
+                line-height: 1;
+                margin-bottom: 2rem;
             }
 
             h4 {
@@ -453,6 +467,7 @@
             top: 50%;
             left: 0%;
             transform: translate(0%, -50%);
+
             i {
                 font-size: 20rem;
             }
@@ -462,7 +477,7 @@
             position: relative;
             padding-top: 15%;
 
-            
+
 
             .card-stack-item {
 
@@ -730,14 +745,40 @@
     }
 }
 
-.area-of-expertise {
-    height: 150vh;
+.additional-section {
+    // height: 150vh;
     background-color: $lemonade;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
     z-index: 4;
-    margin-top: -50px;
+    // margin-top: -50px;
+    // padding-top: calc(50px + 10rem);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100% !important;
+
+    .additional-section-container {
+        .area-of-expertise-title {
+            color: $forest-green;
+            font-weight: 700;
+            font-size: clamp(2.5rem,7vw,6.25rem);
+            text-align: center;
+
+            span {
+                color: rgba(20,52,43,.5);
+            }
+        }
+        .additional-section-wrapper {
+            background-color: $forest-green;
+            border-radius: 50px;
+            
+            .area-of-expertise-wrapper {
+                // padding: 3rem;
+                height: 500px;
+            }
+        }
+    }
 }
 
 .footer {
@@ -864,6 +905,7 @@
                     gap: 20px;
                     width: 50%;
                     margin: 2rem auto 0;
+
                     .footer-cta {
                         color: #fff;
                         opacity: 0.5;

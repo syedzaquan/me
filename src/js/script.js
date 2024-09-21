@@ -120,20 +120,13 @@ mainTimeline.to('.hero', {
     $('body').removeClass('loaded');
 
 
-    setTimeout(() => {
-      lenis.stop();
-    }, 200);
+    // setTimeout(() => {
+    //   lenis.stop();
+    // }, 200);
 
-    // lenis.scrollTo(0, 0);
-
-    lenis.scrollTo("top", {
-      immediate: true
-    });
-  },
-  onComplete: () => {
-    lenis.start();
-    $('body').addClass('loaded');
-    $('body').removeClass('loading');
+    // lenis.scrollTo("top", {
+    //   immediate: true
+    // });
   },
   ease: "power3.out",
 });
@@ -142,17 +135,38 @@ mainTimeline.to('.hero', {
 //   width: '100%',
 // });
 
+var heroText = new SplitType(".hero-title h1");
+
+const heroChars = document.querySelectorAll('.hero-title h1 .char');
+const heroCode = document.querySelector('.hero-title .code');
+
+const heroTl = gsap.timeline();
+
 mainTimeline.from('.ribbon', {
   opacity: 0,
   duration: 1,
   ease: Back.easeOut.config(1.4),
 });
 
-var heroIntro = new SplitType(".hero-title .hero-intro", {
+
+
+var splitText = new SplitType(".hero-title .hero-intro, .montigo, .skills-box span", {
   types: "lines, words"
 });
 
 const heroIntroWord = document.querySelectorAll('.hero-title .hero-intro .word');
+
+mainTimeline.from('.hero h1', {
+  yPercent: 50,
+  duration: 1,
+  ease: "power4",
+});
+
+mainTimeline.to(heroCode, {
+  duration: 1,
+  rotate: -2.5,
+  ease: Back.easeOut.config(1.4),
+});
 
 mainTimeline.from(heroIntroWord, {
   duration: 1,
@@ -161,6 +175,11 @@ mainTimeline.from(heroIntroWord, {
   ease: "power4",
   stagger: 0.025,
   skewY: 7,
+  onComplete: () => {
+    lenis.start();
+    $('body').addClass('loaded');
+    $('body').removeClass('loading');
+  },
 });
 
 
@@ -176,7 +195,7 @@ const scrollTimeline = gsap.timeline({
 });
 
 scrollTimeline.to([".hero", ".ribbon"], {
-  width: 1800,
+  width: '95%',
   borderBottomRightRadius: 50,
   borderBottomLeftRadius: 50,
 })
@@ -218,12 +237,7 @@ ScrollTrigger.create({
   },
 });
 
-var heroText = new SplitType(".hero-title h1");
 
-const heroChars = document.querySelectorAll('.hero-title h1 .char');
-const heroCode = document.querySelector('.hero-title .code');
-
-const heroTl = gsap.timeline();
 
 // heroTl.from(heroChars, {
 //   duration: 0.5,
@@ -238,12 +252,6 @@ const heroTl = gsap.timeline();
 //   opacity: 0,
 //   ease: Back.easeOut.config(1.4),
 // }, "-=1.5");
-
-mainTimeline.to(heroCode, {
-  duration: 1,
-  rotate: -2.5,
-  ease: Back.easeOut.config(1.4),
-});
 
 heroTl.from('.hero-title h5', {
   y: 500,
@@ -262,8 +270,29 @@ const introTimeline = gsap.timeline({
   }
 });
 
+var montigoSplit = $('.montigo .word');
+var skillSplit = $('.skills-box span .word');
+
 introTimeline.from(".introduction", {
   filter: "blur(10px)"
+});
+
+// introTimeline.from(montigoSplit, {
+//   duration: 1,
+//   yPercent: 100,
+//   opacity: 0,
+//   ease: "power4",
+//   stagger: 0.025,
+//   skewY: 7,
+// });
+
+introTimeline.from(skillSplit, {
+  duration: 1,
+  yPercent: 100,
+  opacity: 0,
+  ease: "power4",
+  stagger: 0.025,
+  skewY: 7,
 });
 
 introTimeline.to(".introduction", {
@@ -287,7 +316,6 @@ workTimeline.to(".introduction", {
   backgroundColor: '#fcfbf5',
   duration: 4,
   ease: "power3.out",
-  immediateRender: false
 });
 
 // ScrollTrigger.create({
@@ -404,45 +432,35 @@ $(document).on('click', function () {
   $('.card-stack-item').removeClass('active');
 });
 
-// Fetch Spotify Currently Playing
-const clientId = '9c35ec51404a4907b1024a5c2c9e47e0';
-const clientSecret = 'af95171aafef4eaab2d1cc20148fe738';
-let accessToken = '';
+// let accordionTl = gsap.timeline({
+//   scrollTrigger: {
+//     toggleActions: "restart none none reverse",
+//     trigger: $(".additional-section")[0], // Make sure it's the DOM element
+//     pin: true,
+//     pinSpacing: true,
+//     start: "top top",
+//     end: "+=2000",
+//     scrub: true,
+//     // markers: true,
+//     onLeave: () => {
+//       $(".additional-section").css("left", "56px");
+//     }
+//   }
+// });
 
-async function fetchSpotifyToken() {
-  const result = await fetch('https://accounts.spotify.com/api/token', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'Authorization': 'Basic ' + btoa(clientId + ':' + clientSecret)
-    },
-    body: 'grant_type=client_credentials'
-  });
 
-  const data = await result.json();
-  accessToken = data.access_token;
-}
-
-async function fetchCurrentlyPlaying() {
-  await fetchSpotifyToken();
-
-  const result = await fetch('https://api.spotify.com/v1/me/player/currently-playing', {
-    method: 'GET',
-    headers: {
-      'Authorization': 'Bearer ' + accessToken
-    }
-  });
-
-  if (result.status === 200) {
-    const data = await result.json();
-    const trackName = data.item.name;
-    const trackLink = data.item.external_urls.spotify;
-
-    document.getElementById('track-name').textContent = trackName;
-    document.getElementById('spotify-link').setAttribute('href', trackLink);
-  } else {
-    document.getElementById('track-name').textContent = 'No track is currently playing.';
-  }
-}
-
-fetchCurrentlyPlaying();
+// accordionTl
+//   .from($(".additional-section-wrapper"), {
+//     stagger: {
+//       each: 2,
+//       yoyo: true,
+//       repeat: 1
+//     },
+//     height: 0,
+//     paddingBottom: 0,
+//     paddingTop: 0,
+//     opacity: 1,
+//     duration: 1,
+//     marginBottom: 0,
+//     ease: "power3.inOut",
+//   });
