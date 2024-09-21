@@ -120,13 +120,13 @@ mainTimeline.to('.hero', {
     $('body').removeClass('loaded');
 
 
-    // setTimeout(() => {
-    //   lenis.stop();
-    // }, 200);
+    setTimeout(() => {
+      lenis.stop();
+    }, 200);
 
-    // lenis.scrollTo("top", {
-    //   immediate: true
-    // });
+    lenis.scrollTo("top", {
+      immediate: true
+    });
   },
   ease: "power3.out",
 });
