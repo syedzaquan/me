@@ -3,7 +3,7 @@
     font-family: $syedsans;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: $forest-green;
     // position: fixed;
@@ -12,7 +12,13 @@
     // transform: translateX(-50%);
     margin: 0 auto;
 
-    .ribbon-logo {}
+    @media (max-width: 480px) {
+        justify-content: center;
+    }
+
+    .ribbon-logo, .ribbon-email {
+        display: none;
+    }
 
     .ribbon-datetime,
     .spotify-current {
@@ -28,6 +34,18 @@
             width: 8px;
             display: inline-block;
             margin-right: 10px;
+        }
+    }
+
+    .ribbon-datetime {
+        .clock {
+            font-weight: 500;
+        }
+
+        span {
+            @media (max-width: 480px) {
+                font-size: 14px;
+            }
         }
     }
 

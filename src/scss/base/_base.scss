@@ -152,20 +152,20 @@ html.lenis body {
 }
 
 .circle {
-  background-color: #fc0303;
+  background-color: $lemonade;
   border-radius: 100%;
   font-size: 13px;
-  color: #fc0303;
+  color: $lemonade;
 
 
-  box-shadow: 0 0 0 0 #fc0303;
+  box-shadow: 0 0 0 0 $lemonade;
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   0% {
     // font-size: 8px;
-    box-shadow: 0 0 0 0 rgba(252, 3, 3, 0.7);
+    box-shadow: 0 0 0 0 rgba(206, 234, 104, 0.8);
   }
 
   70% {

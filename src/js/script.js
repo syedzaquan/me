@@ -7,6 +7,8 @@ const lenis = new Lenis({
   duration: 3
 });
 
+let mm = gsap.matchMedia();
+
 var today = new Date();
 var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
 
@@ -98,6 +100,16 @@ const mainTimeline = gsap.timeline();
 
 
 
+mm.add("(min-width: 500px)", () => {
+  ScrollTrigger.create({
+    trigger: ".skills-wrapper",
+    start: "top top",
+    end: "bottom top",
+    pin: ".skills-wrapper h2",
+    pinSpacing: false,
+    // markers: true,
+  });
+});
 
 mainTimeline.to('.hero', {
   y: 0,
@@ -169,6 +181,7 @@ mainTimeline.to(heroCode, {
 });
 
 mainTimeline.from(heroIntroWord, {
+  filter: "blur(10px)",
   duration: 1,
   yPercent: 100,
   opacity: 0,
@@ -187,18 +200,24 @@ mainTimeline.from(heroIntroWord, {
 const scrollTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: ".rolling-text",
-    start: "top bottom-=100px",
-    end: "bottom bottom-=100px",
+    start: "top center-=20%",
+    end: "bottom center-=20%",
+    // start: "top bottom-=100px",
+    // end: "bottom bottom-=100px",
     scrub: true,
     // markers: true,
   }
 });
 
-scrollTimeline.to([".hero", ".ribbon"], {
-  width: '95%',
-  borderBottomRightRadius: 50,
-  borderBottomLeftRadius: 50,
-})
+mm.add("(min-width: 500px)", () => {
+  scrollTimeline.to([".hero", ".ribbon"], {
+    width: '95%',
+    borderBottomRightRadius: 50,
+    borderBottomLeftRadius: 50,
+  })
+});
+
+
 
 // scrollTimeline.to(".ribbon", {
 //   opacity: 0,
@@ -265,7 +284,7 @@ const introTimeline = gsap.timeline({
     trigger: ".introduction",
     start: "top center",
     end: "center center",
-    scrub: true,
+    // scrub: true,
     // markers: true,
   }
 });
@@ -273,8 +292,14 @@ const introTimeline = gsap.timeline({
 var montigoSplit = $('.montigo .word');
 var skillSplit = $('.skills-box span .word');
 
-introTimeline.from(".introduction", {
-  filter: "blur(10px)"
+introTimeline.from(montigoSplit, {
+  filter: "blur(10px)",
+  duration: 1.5,
+  yPercent: 100,
+  opacity: 0,
+  ease: "power4",
+  stagger: 0.025,
+  skewY: 7,
 });
 
 // introTimeline.from(montigoSplit, {
@@ -310,7 +335,7 @@ const workTimeline = gsap.timeline({
 });
 
 workTimeline.to(".introduction", {
-  width: '100%',
+  // width: '100%',
   borderBottomLeftRadius: 0,
   borderBottomRightRadius: 0,
   backgroundColor: '#fcfbf5',
@@ -345,25 +370,31 @@ workTimeline.to(".introduction", {
 //   ease: "power3.out",
 // });
 
-gsap.from('.card-item-wrapper', {
-  scrollTrigger: {
-    trigger: ".card-stack-wrapper",
-    start: "top center",
-    end: "center center",
-    // markers: true
-  },
-  filter: "grayscale(1)",
-  duration: 1.5,
-  xPercent: -50,
-  ease: Back.easeOut.config(1.1)
+mm.add("(min-width: 500px)", () => {
+  gsap.from('.card-item-wrapper', {
+    scrollTrigger: {
+      trigger: ".card-stack-wrapper",
+      start: "top center",
+      end: "center center",
+      // markers: true
+    },
+    filter: "grayscale(1)",
+    duration: 1.5,
+    xPercent: -50,
+    ease: Back.easeOut.config(1.1)
+  });
 });
 
+
+
 gsap.from('.footer-sticky', {
+  // filter: "blur(10px)",
   scrollTrigger: {
     start: 'top bottom',
     end: 'bottom top',
     trigger: '.footer-sticky',
     toggleClass: 'stickem',
+    scrub: true
     // markers: true
   }
 });
@@ -464,3 +495,24 @@ $(document).on('click', function () {
 //     marginBottom: 0,
 //     ease: "power3.inOut",
 //   });
+
+
+mm.add("(min-width: 500px)", () => {
+  ScrollTrigger.create({
+    trigger: ".works-wrapper",
+    start: "top top",
+    end: "bottom top",
+    pin: ".works-wrapper-title",
+    pinSpacing: false,
+    // markers: true,
+  });
+  
+  ScrollTrigger.create({
+    trigger: ".works-wrapper",
+    start: "top top",
+    end: "bottom top",
+    pin: ".instructions-text",
+    pinSpacing: false,
+    // markers: true,
+  });
+});
