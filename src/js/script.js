@@ -132,13 +132,13 @@ mainTimeline.to('.hero', {
     $('body').removeClass('loaded');
 
 
-    setTimeout(() => {
-      lenis.stop();
-    }, 200);
+    // setTimeout(() => {
+    //   lenis.stop();
+    // }, 200);
 
-    lenis.scrollTo("top", {
-      immediate: true
-    });
+    // lenis.scrollTo("top", {
+    //   immediate: true
+    // });
   },
   ease: "power3.out",
 });
@@ -506,7 +506,7 @@ mm.add("(min-width: 500px)", () => {
     pinSpacing: false,
     // markers: true,
   });
-  
+
   ScrollTrigger.create({
     trigger: ".works-wrapper",
     start: "top top",
