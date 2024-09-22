@@ -889,7 +889,7 @@
 
                         .work-title-desc {
                             h3 {
-                                font-size: clamp(1.75rem, -0.0264rem + 4.0845vw, 3.75rem);
+                                font-size: clamp(1.75rem, -0.0264rem + 4.0845vw, 3.25rem);
                                 font-weight: 600;
                                 margin-bottom: 0;
                                 line-height: 1;
@@ -1145,9 +1145,11 @@
                     }
                 }
 
-                h2 {
+                .footer-email {
                     font-size: 90px;
                     font-weight: 500;
+                    display: block;
+                    line-height: 98px;
 
                     @media (max-width: 480px) {
                         font-size: clamp(1.75rem,-.2905rem + 4.9296vw,5.625rem);
@@ -1159,6 +1161,7 @@
                     font-size: 1.75rem;
                     opacity: 0.5;
                     color: #fff;
+                    display: block;
                     transition: all 0.3s ease-in-out;
 
                     &:hover {
