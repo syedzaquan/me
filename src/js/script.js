@@ -149,9 +149,9 @@ document.addEventListener("DOMContentLoaded", function () {
   //   width: '100%',
   // });
 
-  var heroText = new SplitType(".hero-title h1");
+  // var heroText = new SplitType(".hero-title h1");
 
-  const heroChars = document.querySelectorAll('.hero-title h1 .char');
+  // const heroChars = document.querySelectorAll('.hero-title h1 .char');
   const heroCode = document.querySelector('.hero-title .code');
 
   const heroTl = gsap.timeline();
