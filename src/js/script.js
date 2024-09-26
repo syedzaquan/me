@@ -1,9 +1,15 @@
-// Reset page on refresh
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
-//Smooth Scrollbar
-document.addEventListener("DOMContentLoaded", function () {
+document.fonts.ready.then((fontFaceSet) => {
+
+  // Place your JavaScript code here that depends on font loading
+  initializeApp(); // Example function to initialize your app
+});
+
+function initializeApp() {
+  // Reset page on refresh
+  // window.onbeforeunload = function () {
+  //   window.scrollTo(0, 0);
+  // }
+  //Smooth Scrollbar
 
   const lenis = new Lenis({
     duration: 3
@@ -274,12 +280,12 @@ document.addEventListener("DOMContentLoaded", function () {
   //   ease: Back.easeOut.config(1.4),
   // }, "-=1.5");
 
-  heroTl.from('.hero-title h5', {
-    y: 500,
-    duration: 1,
-    opacity: 0,
-    ease: Back.easeOut.config(1.4),
-  });
+  // heroTl.from('.hero-title h5', {
+  //   y: 500,
+  //   duration: 1,
+  //   opacity: 0,
+  //   ease: Back.easeOut.config(1.4),
+  // });
 
   const introTimeline = gsap.timeline({
     scrollTrigger: {
@@ -518,5 +524,4 @@ document.addEventListener("DOMContentLoaded", function () {
       // markers: true,
     });
   });
-
-});
+}
