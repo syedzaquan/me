@@ -2883,4 +2883,5 @@ function getState() {
 const $country = document.querySelector(`#country`);
 const $state = document.querySelector(`#state`)
 // $country.textContent = getCountry();
-$state.textContent = getState();
+// $state.textContent = getState();
+$state.textContent = 'Kuala Lumpur';

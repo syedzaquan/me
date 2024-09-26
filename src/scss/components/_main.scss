@@ -362,34 +362,39 @@
         .rolling-text-item {
             flex: 0 0 auto;
             white-space: nowrap;
-            padding: 0 40px;
+            padding: 0 0 0 40px;
 
             @media (max-width: 480px) {
-                padding: 0 20px;
+                padding: 0 0 0 20px;
             }
 
             h3 {
                 font-size: clamp(8rem, 5.8873rem + 6.7606vw, 14rem);
                 font-family: $grotesk;
                 text-transform: uppercase;
+                display: flex;
 
                 @media (max-width: 1024px) {
-                    font-size: clamp(4rem,5.8873rem + 6.7606vw,5rem);
+                    font-size: clamp(4rem, 5.8873rem + 6.7606vw, 5rem);
                 }
-            }
 
-            &.scrolling-dots {
-                display: flex;
-                align-items: center;
-                font-size: 2rem;
-                color: $lemonade;
+                i {
+                    align-self: center;
+                    margin-top: 30px;
+                    padding: 0 0 0 40px;
+                    font-size: 2rem;
+                    color: $lemonade;
+                    align-self: center;
 
-                @media (max-width: 480px) {
-                    i {
-                        font-size: 1.25rem;
+                    @media (max-width: 480px) {
+                        i {
+                            font-size: 1.25rem;
+                        }
                     }
                 }
             }
+
+            &.scrolling-dots {}
         }
     }
 }
@@ -487,6 +492,7 @@
                     border-radius: 10px;
                     padding: 5px;
                     transition: all 0.3s ease-in-out;
+
                     &:hover {
                         color: $lemonade;
                         background-color: $forest-green;
@@ -695,11 +701,12 @@
                     width: 100%;
                     transform: translateX(0);
                     margin-top: 10px;
-                    
+
                     &:not(:first-child) {
                         margin-top: 15px;
                     }
                 }
+
                 &.celcom {
                     background-color: #001871;
 
@@ -1076,7 +1083,7 @@
                     font-weight: 500;
 
                     @media (max-width: 480px) {
-                        font-size: clamp(1.75rem,-.2905rem + 4.9296vw,5.625rem);
+                        font-size: clamp(1.75rem, -.2905rem + 4.9296vw, 5.625rem);
                     }
                 }
             }
@@ -1164,7 +1171,7 @@
                     line-height: 98px;
 
                     @media (max-width: 480px) {
-                        font-size: clamp(1.75rem,-.2905rem + 4.9296vw,5.625rem);
+                        font-size: clamp(1.75rem, -.2905rem + 4.9296vw, 5.625rem);
                         line-height: 36px;
                     }
                 }
