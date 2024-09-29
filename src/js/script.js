@@ -239,30 +239,51 @@ function initializeApp() {
   //   opacity: 0,
   // });
 
-  const scrollingTextItems = gsap.utils.toArray('.rolling-text-item');
-  const scrollingTextTimeline = horizontalLoop(scrollingTextItems, {
-    repeat: -1
+  mm.add("(min-width: 500px)", () => {
+    const scrollingTextItems = gsap.utils.toArray('.rolling-text-item');
+    const scrollingTextTimeline = horizontalLoop(scrollingTextItems, {
+      repeat: -1
+    });
+
+    let speedTween;
+
+    ScrollTrigger.create({
+      trigger: ".rolling-text",
+      start: "top bottom",
+      end: "bottom top",
+      onUpdate: (self) => {
+        if (speedTween) speedTween.kill();
+        speedTween = gsap.timeline()
+          .to(scrollingTextTimeline, {
+            timeScale: 4 * self.direction,
+            duration: 0.25
+          })
+          .to(scrollingTextTimeline, {
+            timeScale: 2 * self.direction,
+            duration: 0.5
+          }, "+=0.5");
+      },
+    });
   });
 
-  let speedTween;
+  mm.add("(max-width: 499px)", () => {
+    const marqueeSkills = gsap.utils.toArray(".rolling-text-item");
 
-  ScrollTrigger.create({
-    trigger: ".rolling-text",
-    start: "top bottom",
-    end: "bottom top",
-    onUpdate: (self) => {
-      if (speedTween) speedTween.kill();
-      speedTween = gsap.timeline()
-        .to(scrollingTextTimeline, {
-          timeScale: 4 * self.direction,
-          duration: 0.25
-        })
-        .to(scrollingTextTimeline, {
-          timeScale: 2 * self.direction,
-          duration: 0.5
-        }, "+=0.5");
-    },
+    const loop = horizontalLoop(marqueeSkills, {
+      paused: true,
+      repeat: -1,
+    });
+
+    loop.play();
+
+    ScrollTrigger.create({
+      start: 0,
+      end: 'max',
+    })
   });
+
+
+
 
 
 
